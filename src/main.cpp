@@ -7,8 +7,9 @@ static int openAllTreasureRoomChests() {
 	auto gsm = GameStatsManager::sharedState();
 	int opened = 0;
 
-	// Los cofres de la Treasure Room son los "secret chests" numerados.
-	for (int id = 1; id <= 100; ++id) {
+	// Todos los cofres de la Treasure Room (1, 5, 10, 25, 50 y 100 llaves)
+	// son "secret chests" numerados. Hay cientos, asi que se recorre un rango grande.
+	for (int id = 1; id <= 5000; ++id) {
 		if (!gsm->getRewardForSecretChest(id)) continue; // no existe ese id
 		if (gsm->isSecretChestUnlocked(id)) continue;    // ya abierto
 
