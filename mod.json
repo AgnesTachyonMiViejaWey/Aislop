@@ -1,0 +1,15 @@
+{
+	"geode": "6.0.0-alpha.2",
+	"gd": {
+		"win": "2.2091",
+		"android": "2.2091",
+		"mac": "2.2091",
+		"ios": "2.2091"
+	},
+	"id": "claude.open-all-chests",
+	"name": "Open All Chests",
+	"version": "v1.0.0",
+	"developer": "Claude",
+	"description": "Abre todos los cofres de la Treasure Room con un botón y guarda tu archivo.",
+	"tags": ["utility", "offline"]
+}
